@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>DevURL</key>
+	<string>http://api.flickr.com/services/rest/?method=flickr.photos.search&amp;api_key=04913f5bf37d5ada4a68a07ffa9a7066&amp;tags=monkeys&amp;format=json&amp;nojsoncallback=1</string>
+</dict>
+</plist>

@@ -7,7 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FPFlickrFetchManager.h"
+#import "FPPhoto.h"
 
-@interface FPViewController : UIViewController
+@interface FPViewController : UIViewController<FPFlickrFetchManagerDelegate>
+@property (nonatomic, strong) FPFlickrFetchManager *flickrFetchManager;
+@property (nonatomic, weak) IBOutlet UIActivityIndicatorView *activityIndicator;
+@property (nonatomic, strong) NSOperationQueue *flickrQueue;
 
+@property (nonatomic, weak) IBOutlet UITableView *photoTableVEW;
+@property (nonatomic, strong) NSArray *allFlickrPhotosArr;
+
+-(IBAction)fetch:(id)sender;
 @end

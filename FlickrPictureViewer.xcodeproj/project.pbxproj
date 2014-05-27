@@ -21,6 +21,13 @@
 		84B3739F1927333200EBEF18 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84B373811927333200EBEF18 /* UIKit.framework */; };
 		84B373A71927333200EBEF18 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 84B373A51927333200EBEF18 /* InfoPlist.strings */; };
 		84B373A91927333200EBEF18 /* FlickrPictureViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B373A81927333200EBEF18 /* FlickrPictureViewerTests.m */; };
+		84B373B31927345A00EBEF18 /* Enviornment.plist in Resources */ = {isa = PBXBuildFile; fileRef = 84B373B21927345A00EBEF18 /* Enviornment.plist */; };
+		84B373B6192734D700EBEF18 /* FPFlickrFetchManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B373B5192734D700EBEF18 /* FPFlickrFetchManager.m */; };
+		84B373B91927351700EBEF18 /* FPPhoto.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B373B81927351700EBEF18 /* FPPhoto.m */; };
+		84B373BD19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B373BB19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.m */; };
+		84B373BE19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B373BC19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.xib */; };
+		84B373C019274E7400EBEF18 /* Placeholder.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B373BF19274E7400EBEF18 /* Placeholder.jpg */; };
+		84B373C319275A8E00EBEF18 /* images.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 84B373C219275A8E00EBEF18 /* images.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +60,16 @@
 		84B373A41927333200EBEF18 /* FlickrPictureViewerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlickrPictureViewerTests-Info.plist"; sourceTree = "<group>"; };
 		84B373A61927333200EBEF18 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		84B373A81927333200EBEF18 /* FlickrPictureViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlickrPictureViewerTests.m; sourceTree = "<group>"; };
+		84B373B21927345A00EBEF18 /* Enviornment.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Enviornment.plist; sourceTree = "<group>"; };
+		84B373B4192734D700EBEF18 /* FPFlickrFetchManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPFlickrFetchManager.h; sourceTree = "<group>"; };
+		84B373B5192734D700EBEF18 /* FPFlickrFetchManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPFlickrFetchManager.m; sourceTree = "<group>"; };
+		84B373B71927351700EBEF18 /* FPPhoto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPPhoto.h; sourceTree = "<group>"; };
+		84B373B81927351700EBEF18 /* FPPhoto.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPPhoto.m; sourceTree = "<group>"; };
+		84B373BA19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FPFlickerPhotoTableViewCell.h; sourceTree = "<group>"; };
+		84B373BB19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FPFlickerPhotoTableViewCell.m; sourceTree = "<group>"; };
+		84B373BC19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FPFlickerPhotoTableViewCell.xib; sourceTree = "<group>"; };
+		84B373BF19274E7400EBEF18 /* Placeholder.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = Placeholder.jpg; path = FlickrPictureViewer/Placeholder.jpg; sourceTree = "<group>"; };
+		84B373C219275A8E00EBEF18 /* images.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = images.jpg; path = FlickrPictureViewer/images.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +99,7 @@
 		84B373711927333200EBEF18 = {
 			isa = PBXGroup;
 			children = (
+				84B373C119275A7E00EBEF18 /* images */,
 				84B373831927333200EBEF18 /* FlickrPictureViewer */,
 				84B373A21927333200EBEF18 /* FlickrPictureViewerTests */,
 				84B3737C1927333200EBEF18 /* Frameworks */,
@@ -114,11 +132,19 @@
 			children = (
 				84B3738C1927333200EBEF18 /* FPAppDelegate.h */,
 				84B3738D1927333200EBEF18 /* FPAppDelegate.m */,
+				84B373B4192734D700EBEF18 /* FPFlickrFetchManager.h */,
+				84B373B5192734D700EBEF18 /* FPFlickrFetchManager.m */,
+				84B373B71927351700EBEF18 /* FPPhoto.h */,
+				84B373B81927351700EBEF18 /* FPPhoto.m */,
 				84B3738F1927333200EBEF18 /* Main.storyboard */,
 				84B373921927333200EBEF18 /* FPViewController.h */,
 				84B373931927333200EBEF18 /* FPViewController.m */,
 				84B373951927333200EBEF18 /* Images.xcassets */,
 				84B373841927333200EBEF18 /* Supporting Files */,
+				84B373B21927345A00EBEF18 /* Enviornment.plist */,
+				84B373BA19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.h */,
+				84B373BB19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.m */,
+				84B373BC19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.xib */,
 			);
 			path = FlickrPictureViewer;
 			sourceTree = "<group>";
@@ -150,6 +176,15 @@
 				84B373A51927333200EBEF18 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B373C119275A7E00EBEF18 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				84B373C219275A8E00EBEF18 /* images.jpg */,
+				84B373BF19274E7400EBEF18 /* Placeholder.jpg */,
+			);
+			name = images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,7 +264,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B373BE19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.xib in Resources */,
+				84B373C019274E7400EBEF18 /* Placeholder.jpg in Resources */,
+				84B373B31927345A00EBEF18 /* Enviornment.plist in Resources */,
 				84B373961927333200EBEF18 /* Images.xcassets in Resources */,
+				84B373C319275A8E00EBEF18 /* images.jpg in Resources */,
 				84B373881927333200EBEF18 /* InfoPlist.strings in Resources */,
 				84B373911927333200EBEF18 /* Main.storyboard in Resources */,
 			);
@@ -250,9 +289,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84B373B6192734D700EBEF18 /* FPFlickrFetchManager.m in Sources */,
+				84B373B91927351700EBEF18 /* FPPhoto.m in Sources */,
 				84B3738E1927333200EBEF18 /* FPAppDelegate.m in Sources */,
 				84B3738A1927333200EBEF18 /* main.m in Sources */,
 				84B373941927333200EBEF18 /* FPViewController.m in Sources */,
+				84B373BD19274E2800EBEF18 /* FPFlickerPhotoTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
