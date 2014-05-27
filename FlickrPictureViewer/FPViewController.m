@@ -53,7 +53,7 @@
 }
 
 #pragma mark - tableview datasource /delegate
-
+//Ritu test commit
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     NSLog(@"count is  %d", self.allFlickrPhotosArr.count);
@@ -74,8 +74,9 @@
     FPPhoto *aPhoto = [self.allFlickrPhotosArr objectAtIndex:indexPath.row];
     NSOperationQueue *queue;
     if ( queue == nil )
-    {
+    
         queue = [[NSOperationQueue alloc] init];
+    
     }
     
     
